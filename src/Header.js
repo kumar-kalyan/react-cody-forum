@@ -1,9 +1,10 @@
 import React from 'react';
 function Header(props) {
+  const { username } = props;
   return (
-    <>
-      <h1>Card Header</h1>
-    </>
+    <div className="header">
+      <h1>{username}</h1>
+    </div>
   );
 }
 export default Header;
